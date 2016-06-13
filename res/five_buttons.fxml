@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
 <?import java.lang.*?>
+<?import javafx.scene.control.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.text.Text?>
 
-<GridPane alignment="CENTER" hgap="10" prefHeight="342.0" prefWidth="334.0" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="de.hhu.propra16.FiveButtonsController">
+<GridPane alignment="CENTER" hgap="10" prefHeight="342.0" prefWidth="334.0" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.hhu.propra16.FiveButtonsController">
     <padding><Insets bottom="10" left="25" right="25" top="25" /></padding>
    <children>
-      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+      <VBox alignment="CENTER" prefHeight="336.0" prefWidth="313.0" spacing="20.0">
          <children>
          
              <Text text="Five Buttons" />
-            <Button mnemonicParsing="false" text="One" />
-            <Button mnemonicParsing="false" text="Two" />
-            <Button mnemonicParsing="false" text="Three" />
-            <Button mnemonicParsing="false" text="Four" />
-            <Button mnemonicParsing="false" text="Five" />
+             <Button mnemonicParsing="false" onAction="#buttonA" text="One" />
+
+             <Button mnemonicParsing="false" onAction="#buttonE" text="Five" />
+            <Label fx:id="time" prefHeight="19.0" prefWidth="320.0" text="Uhrzeit">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
          </children>
       </VBox>
    </children>
